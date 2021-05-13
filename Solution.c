@@ -44,5 +44,27 @@ void printSolution(Solution* pSol, int numOfItems, int totalWeight) {
 		}
 		printf("\n");
 	}
-	printf("\nOptimal solution: %d", pSol->optSol);
+	printf("\nOptimal solution: %d\n", pSol->optSol);
+}
+
+void initXTable(Solution* pSol, int* values, int* weights,int numOfItems, int totalWeight) {
+	for (int i = 1; i < numOfItems; i++) {
+		for (int j = 1; j < totalWeight; j++) {
+			float isInteger = j / weights[i - 1] - (int)j / weights[i - 1];
+			if (isInteger == 0)
+				pSol->s[i][j] = j / weights[i - 1];
+			else
+				pSol->s[i][j] = 0;
+		}
+	}
+}
+
+int findMax(int n1, int n2, int n3) {
+	if (n1 > n2 && n1 > n3)
+		return n1;
+	if (n2 > n1 && n2 > n3)
+		return n2;
+	if (n3 > n2 && n3 > n1)
+		return n3;
+	return n1;
 }

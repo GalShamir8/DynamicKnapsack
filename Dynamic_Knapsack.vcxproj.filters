@@ -24,12 +24,18 @@
     <ClCompile Include="Main.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="O3_e.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Q3_d.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Solution.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Q3_e.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

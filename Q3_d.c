@@ -19,8 +19,9 @@ Solution* Q3_d(int numOfItems, int* values, int* weights, int totalweight) {
 			}
 		}
 	}
-	printSolution(pSol, numOfItems + 1, totalweight + 1);
 	pSol->optSol = pSol->t[numOfItems][totalweight];
+	printSolution(pSol, numOfItems + 1, totalweight + 1);
+
 	return pSol;
 }
 

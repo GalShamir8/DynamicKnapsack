@@ -124,10 +124,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Q3_d.h" />
+    <ClInclude Include="Q3_e.h" />
     <ClInclude Include="Solution.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.c" />
+    <ClCompile Include="O3_e.c" />
     <ClCompile Include="Q3_d.c" />
     <ClCompile Include="Solution.c" />
   </ItemGroup>
